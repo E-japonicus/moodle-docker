@@ -5,7 +5,7 @@ services:
     image: mysql:5.5.59
     volumes:
       - "./mysql/data:/var/lib/mysql"
-      - "./mysql/moodle-mysql.cnf:/etc/mysql/conf.d"
+      - "./mysql/moodle-mysql.cnf:/etc/mysql/my.cnf"
     env_file:
       - "./moodle-variables.env"
     ports:
